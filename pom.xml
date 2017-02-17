@@ -28,7 +28,15 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.2</version>				
+				<version>2.5.2</version>
+				<configuration>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<!-- do not release profile from Maven super pom -->
+					<useReleaseProfile>false</useReleaseProfile>
+					<!--  instead use our own one called release, see below -->
+					<releaseProfiles>release</releaseProfiles>
+				</configuration>								
 				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.scm</groupId>
