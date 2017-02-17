@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tig</groupId>
 	<artifactId>hello</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>mule</packaging>
 	<name>Mule hello Application</name>
 
@@ -20,7 +20,7 @@
 		<url>https://github.com/LokeshVermaG/hello</url>
 		<developerConnection>scm:git:https://github.com/LokeshVermaG/hello</developerConnection>
 		<connection>scm:git:https://github.com/LokeshVermaG/hello</connection>
-		<tag>HEAD</tag>
+		<tag>hello-1.0.0</tag>
 	</scm>
 	
 	<build>
